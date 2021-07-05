@@ -24,8 +24,7 @@ async def neko(ctx):
 
 @bot.command()
 async def vote(ctx):
-        # リアクションアイコンを付けたい
         await message.channel.send("あなたは右利きですか？")
-        [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記   
+        [await q.add_reaction(i) for i in ('⭕', '❌')]    
         
 bot.run(token)
