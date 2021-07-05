@@ -22,6 +22,9 @@ async def ping(ctx):
 async def neko(ctx):
     await ctx.send('にゃーん')
 
-
+@bot.command()
+async def "!投票"(ctx):
+    q = await message.channel.send("あなたは右利きですか？")
+        [await q.add_reaction(i) for i in ('⭕', '❌')]
         
 bot.run(token)
