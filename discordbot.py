@@ -21,7 +21,7 @@ async def ping(ctx):
 async def neko(ctx):
     await ctx.send('にゃーん')
 
-@bot.event
+@bot.event()
 async def on_message(message):
     """メッセージを処理"""
     if message.author.bot:  # ボットのメッセージをハネる
