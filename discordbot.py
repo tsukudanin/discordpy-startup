@@ -16,10 +16,7 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    
-@bot.command()
-async def ohayo(ctx):
-    await ctx.send('{message.author.mention}さん おはようございます')    
+      
 
 
 
