@@ -41,8 +41,5 @@ async def member(ctx, day: int):
     else:
         await ctx.send('記入しました')
 
-@bot.command()
-async def vote(ctx):
-    await sent_msg.add_reaction('👍')
     
 bot.run(token)
