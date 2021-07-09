@@ -20,6 +20,11 @@ async def ping(ctx):
 @bot.command()
 async def neko(ctx):
     await ctx.send('にゃーん')
+
+@bot.command()
+async def vote(ctx):
+    sent_msg = await ctx.send(f"OK?")    
+    await sent_msg.add_reaction('👍')
     
 @bot.command()
 async def member(ctx, day: int):
