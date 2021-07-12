@@ -24,8 +24,8 @@ async def neko(ctx):
 @bot.command()
 async def vote(ctx):
     sent_msg = await ctx.send(f"OK?")    
-    await sent_msg.add_reaction('a')
-    await sent_msg.add_reaction('b')
+    await sent_msg.add_reaction('⭕')
+    await sent_msg.add_reaction('❌')
     
 @bot.command()
 async def member(ctx, day: int):
