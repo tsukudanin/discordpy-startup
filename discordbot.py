@@ -26,6 +26,11 @@ async def vote(ctx):
     sent_msg = await ctx.send(f"OK?")    
     await sent_msg.add_reaction('⭕')
     await sent_msg.add_reaction('❌')
+
+@bot.command()
+async def (ctx):
+     dm = await message.author.create_dm()
+     await dm.send(f"{message.author.mention}さんにダイレクトメッセージ")
     
 @bot.command()
 async def member(ctx, day: int):
