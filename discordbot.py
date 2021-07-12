@@ -22,11 +22,18 @@ async def neko(ctx):
     await ctx.send('にゃーん')
 
 @bot.command()
-async def vote(ctx):
+async def vote2(ctx):
     sent_msg = await ctx.send(f"OK?")    
     await sent_msg.add_reaction('🅰')
     await sent_msg.add_reaction('🅱')
 
+@bot.command()
+async def vote2(ctx):
+    sent_msg = await ctx.send(f"OK?")    
+    await sent_msg.add_reaction('🇦')
+    await sent_msg.add_reaction('🇧')
+    await sent_msg.add_reaction('🇨')
+    
 @bot.command()
 async def direct(ctx):
      dm = await message.author.create_dm()
