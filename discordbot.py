@@ -28,7 +28,7 @@ async def vote(ctx):
     await sent_msg.add_reaction('❌')
 
 @bot.command()
-async def (ctx):
+async def direct(ctx):
      dm = await message.author.create_dm()
      await dm.send(f"{message.author.mention}さんにダイレクトメッセージ")
     
