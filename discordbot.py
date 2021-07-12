@@ -26,13 +26,6 @@ async def vote2(ctx):
     sent_msg = await ctx.send(f"OK?")    
     await sent_msg.add_reaction('🅰')
     await sent_msg.add_reaction('🅱')
-
-@bot.command()
-async def vote3(ctx):
-    sent_msg = await ctx.send(f"OK?")    
-    await sent_msg.add_reaction('🇦')
-    await sent_msg.add_reaction('🇧')
-    await sent_msg.add_reaction('🇨')
     
 @bot.command()
 async def direct(ctx):
