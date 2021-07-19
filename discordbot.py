@@ -17,7 +17,7 @@ async def on_command_error(ctx, error):
 	# ADDS THIS VALUE TO THE $HELP PING MESSAGE.
 	help="Uses come crazy logic to determine if pong is actually the correct value or not.",
 	# ADDS THIS VALUE TO THE $HELP MESSAGE.
-	brief="Prints pong back to the channel."
+	brief="botがpongと発言します。"
 )
 async def ping(ctx):
 	# SENDS A MESSAGE TO THE CHANNEL USING THE CONTEXT OBJECT.
