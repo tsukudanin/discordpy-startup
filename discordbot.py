@@ -41,7 +41,7 @@ async def ok(ctx):
     
 @bot.command(
 	# ADDS THIS VALUE TO THE $HELP MESSAGE.
-	brief="二択の投票ができます。"
+	brief="AとBの二択の投票ができます。"
 )
 async def vote2(ctx):
     sent_msg = await ctx.send(f"どっちにする?")    
@@ -49,6 +49,16 @@ async def vote2(ctx):
     await sent_msg.add_reaction('🅱')
     
     
+@bot.command(
+	# ADDS THIS VALUE TO THE $HELP MESSAGE.
+	brief="三原色で三択の投票ができます。"
+)
+async def vote2(ctx):
+    sent_msg = await ctx.send(f"どれにする?")    
+    await sent_msg.add_reaction('🔴')
+    await sent_msg.add_reaction('🔵')
+    await sent_msg.add_reaction('🟡')
+
 @bot.command()
 async def member(ctx, day: int):
     if ctx.message.author.nick is not None:
