@@ -24,8 +24,6 @@ async def ping(ctx):
 	await ctx.channel.send("pong")
     
 @bot.command(
-	# ADDS THIS VALUE TO THE $HELP PING MESSAGE.
-	help="Uses come crazy logic to determine if にゃーん is actually the correct value or not.",
 	# ADDS THIS VALUE TO THE $HELP MESSAGE.
 	brief="何処からかにゃーんと声が…"
 )
