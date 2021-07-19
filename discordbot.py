@@ -23,19 +23,24 @@ async def ping(ctx):
 	# SENDS A MESSAGE TO THE CHANNEL USING THE CONTEXT OBJECT.
 	await ctx.channel.send("pong")
     
-@bot.command()
+@bot.command(
+	# ADDS THIS VALUE TO THE $HELP PING MESSAGE.
+	help="Uses come crazy logic to determine if にゃーん is actually the correct value or not.",
+	# ADDS THIS VALUE TO THE $HELP MESSAGE.
+	brief="何処からかにゃーんと声が…"
+)
 async def neko(ctx):
     await ctx.send('にゃーん')
 
 @bot.command()
 async def ok(ctx):
-    sent_msg = await ctx.send(f"OK?")    
+    sent_msg = await ctx.send(f"これで良い?")    
     await sent_msg.add_reaction('⭕')
     await sent_msg.add_reaction('❌')
     
 @bot.command()
 async def vote2(ctx):
-    sent_msg = await ctx.send(f"OK?")    
+    sent_msg = await ctx.send(f"どっちにする?")    
     await sent_msg.add_reaction('🅰')
     await sent_msg.add_reaction('🅱')
     
