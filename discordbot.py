@@ -13,9 +13,15 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command()
+@bot.command(
+	# ADDS THIS VALUE TO THE $HELP PING MESSAGE.
+	help="Uses come crazy logic to determine if pong is actually the correct value or not.",
+	# ADDS THIS VALUE TO THE $HELP MESSAGE.
+	brief="Prints pong back to the channel."
+)
 async def ping(ctx):
-    await ctx.send('pong')
+	# SENDS A MESSAGE TO THE CHANNEL USING THE CONTEXT OBJECT.
+	await ctx.channel.send("pong")
     
 @bot.command()
 async def neko(ctx):
