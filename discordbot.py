@@ -30,13 +30,19 @@ async def ping(ctx):
 async def neko(ctx):
     await ctx.send('にゃーん')
 
-@bot.command()
+@bot.command(
+	# ADDS THIS VALUE TO THE $HELP MESSAGE.
+	brief="〇と×で投票できます。"
+)
 async def ok(ctx):
     sent_msg = await ctx.send(f"これで良い?")    
     await sent_msg.add_reaction('⭕')
     await sent_msg.add_reaction('❌')
     
-@bot.command()
+@bot.command(
+	# ADDS THIS VALUE TO THE $HELP MESSAGE.
+	brief="二択の投票ができます。"
+)
 async def vote2(ctx):
     sent_msg = await ctx.send(f"どっちにする?")    
     await sent_msg.add_reaction('🅰')
