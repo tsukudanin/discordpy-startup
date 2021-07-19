@@ -53,7 +53,7 @@ async def vote2(ctx):
 	# ADDS THIS VALUE TO THE $HELP MESSAGE.
 	brief="三原色で三択の投票ができます。"
 )
-async def vote2(ctx):
+async def vote3(ctx):
     sent_msg = await ctx.send(f"どれにする?")    
     await sent_msg.add_reaction('🔴')
     await sent_msg.add_reaction('🔵')
